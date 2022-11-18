@@ -32,7 +32,7 @@ h1, h2, h3 {
     text-align: center;
 }
 h1 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 500;
 }
 h2 {
@@ -55,6 +55,10 @@ section {
      width: 25%;
      float: left;
 }
+.col-3 {
+     width: 33%;
+     float: left;
+}
 .col-2 {
      width: 50%;
      float: left;
@@ -62,8 +66,11 @@ section {
 .row, .author-row, .affil-row {
      overflow: auto;
 }
-.author-row, .affil-row {
+.author-row {
     font-size: 20px;
+}
+.affil-row {
+    font-size: 18px;
 }
 .row {
     margin: 16px 0px 16px 0px;
@@ -98,6 +105,11 @@ hr {
 }
 p {
     line-height: 1.25em;
+}
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .caption {
     font-size: 16px;
@@ -174,6 +186,25 @@ figure {
     color: #1367a7;
 }
 
+.topnav {
+  overflow: hidden;
+  background-color: #EEEEEE;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 </style>
 
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
@@ -203,34 +234,40 @@ figure {
         </p>
     </section>
 
+
     <section id="teaser-videos">
-        <figure style="width: 33%; float: left">
-            <video class="centered" width="100%" controls muted loop>
-                <source src="assets/qualcomp.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <figure style="width: 33%; float: left;">
+            <p style="text-align: center;">
+            <iframe src="https://drive.google.com/file/d/1qVYmIRRWFJ2hFwXlWUyIg_9Chzjanb13/preview"
+                width="85%"
+                allowtransparency="true" frameborder="0" scrolling="no" 
+                allow="autoplay" allowfullscreen="true">Your browser doesn't support iFrames.</iframe>
+            </p>
             <p class="caption">
-                Caption.
+            Compressing the Notre Dame model at different levels of details.
             </p>
         </figure>
-        
+
         <figure style="width: 33%; float: left">
-            <video class="centered" width="100%" controls muted loop>
-                <source src="assets/interp.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <p style="text-align: center;">
+            <iframe src="https://drive.google.com/file/d/1DYGi2gBXlqWyhKwg9yI5egUdyXRC63EP/preview" 
+                width="85%" 
+                allowtransparency="true" frameborder="0" scrolling="no" 
+                allow="autoplay" allowfullscreen="true">Your browser doesn't support iFrames.</iframe>
             <p class="caption">
-                Caption.
+            30-second fast forward video.
             </p>
         </figure>
-        
+
         <figure style="width: 33%; float: left">
-            <video class="centered" width="100%" controls muted loop>
-                <source src="assets/demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <p style="text-align: center;">
+            <iframe src="https://drive.google.com/file/d/1-6vYVy75dxp968UlpsOKQGZeV5nX8BBl/preview" 
+                width="85%"
+                allowtransparency="true" frameborder="0" scrolling="no" 
+                allow="autoplay" allowfullscreen="true">Your browser doesn't support iFrames.</iframe>
+            </p>
             <p class="caption">
-                Caption.
+            Compressing the Sakura model at different levels of details.
             </p>
         </figure>
     </section>
